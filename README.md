@@ -13,7 +13,6 @@ void nv12_to_yuv420p(unsigned char* nv12, unsigned char* yuv420p, int width, int
     int u_size = y_size / 4;
     int v_size = u_size;
     int uv_size = u_size + v_size;
-    int yuv_size = y_size + uv_size;
 
     unsigned char *src_y = malloc(y_size);
     unsigned char *src_uv = malloc(uv_size);
